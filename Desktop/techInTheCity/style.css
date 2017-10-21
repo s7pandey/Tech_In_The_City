@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Roboto:300,400');
+
 * {
     margin: 0;
 }
@@ -40,9 +42,9 @@ body {
     border-radius:50%;
 }
 .outer-circle {
-    width: 190px;
-    height: 190px;
-    border: 5px solid #1A535C;
+    width: 160px;
+    height: 160px;
+    border: 3px solid #1A535C;
     position: relative;
     display:flex;
     justify-content: center;
@@ -51,8 +53,8 @@ body {
 }
 
 .inner-circle {
-    width:178px;
-    height:178px;
+    width: 148px;
+    height: 148px;
     background:#1A535C;
     position:relative;
     display:flex;
@@ -63,12 +65,11 @@ body {
 }
 
 .person.material-icons{
-    position:relative;
-    color:#f7fff7;
-    font-size:120px;
-    padding:0px;
-    margin:0px;
-
+    position: relative;
+    color: #f7fff7;
+    font-size: 85px;
+    padding: 0px;
+    margin-top: 5px;
 }
 
 
@@ -76,8 +77,10 @@ body {
     position: relative;
     color:#f7fff7;
     font-family: 'Roboto condensed';
-    font-size:30px;
-    
+        font-size: 22px;
+    margin-bottom: 27px;
+    font-weight: 300;
+    margin-top: -5px;
 }
 
 .circle1{
@@ -98,13 +101,17 @@ body {
     /* flex-grow:2; */
     display:flex;
     justify-content: space-around;
-    align-items: flex-end; 
+    align-items: center;
     position: relative;
-    flex-basis:300px
+        flex-basis: 450px;
+width: 85%;
+    left: 7.5%;
+    margin-bottom: 35px;
+
 }
 
 .circ2.circlebase.outer-circle{
-    border: 5px solid #4ecdc4;
+    border: 3px solid #4ecdc4;
 }
 
 .circ2.circlebase.inner-circle{
@@ -113,18 +120,21 @@ body {
 }
 
 .menu-options {
-    display:flex;
-    justify-content:space-evenly;
-    align-items:flex-end;
-    position:relative;
-    flex-basis:100px;
-    /* flex-grow:1.5; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    position: relative;
+    flex-basis: 100px;
+    /* flex-grow: 1.5; */
+width: 95%;
+    left: 2.5%;
+    margin-bottom: -40px;
 
 }
 
 .menu-circle.circlebase{
-    width:50px;
-    height:50px;
+width: 42px;
+    height: 42px;
     background:#f7fff7;
     position:relative;
     display:flex;
@@ -134,7 +144,7 @@ body {
 .m1.material-icons {
     position:relative;
     color:lightslategrey;
-    font-size:33px;
+    font-size:27px;
 }
 
 
@@ -143,13 +153,13 @@ body {
     position: relative;
     justify-content: center;
     align-items: flex-end;
-
+    flex-basis: 65px;
 }
 
 .location1.material-icons {
     position:relative;
     color:#f7fff7;
-    font-size:60px;
+    font-size: 45px;
     
 }
 
@@ -163,14 +173,16 @@ body {
 .address1 {
     position:relative;
     color:lightgray;
-    font-size:17px;
-    font-family: 'roboto'
+    font-size:13px;
+    font-family: 'roboto condensed';
+    font-weight: 300;
 }
 .address2 {
     position:relative;
     color:#f7fff7;
-    font-size:27px;
-    font-family: 'roboto'
+    font-size: 22px;
+    font-family: 'roboto';
+    font-weight: 300;
 }
 
 /* page 2 css */
@@ -183,7 +195,10 @@ body {
      flex-basis:150px;
     flex-direction:column;
     margin-right:3%;
-    height:100%;
+        margin-right: 7%;
+                height: 580px;
+
+    margin-bottom: 160px;
 }
 
 .circle_walk{
@@ -202,6 +217,8 @@ body {
 }
 
 
+
+
 .circle_car{
     display:flex;
     justify-content: center;
@@ -213,14 +230,14 @@ body {
 .directions.material-icons{
     position:relative;
     color:#f7fff7;
-    font-size:65px;
+    font-size: 76px;
 
 }
 
 .page2.circlebase.outer-circle {
-    width: 120px;
-    height: 120px;
-    border: 5px solid #4ecdc4;
+    width: 160px;
+    height: 160px;
+    border: 3px solid #4ecdc4;
     position: relative;
     display:flex;
     justify-content: center;
@@ -229,8 +246,8 @@ body {
 }
 
 .page2.circlebase.inner-circle {
-    width:110px;
-    height:110px;
+    width:148px;
+    height:148px;
     background:#4ecdc4;
     position:relative;
     display:flex;
@@ -242,7 +259,7 @@ body {
 
 .page2.circ2.circlebase.outer-circle {
   
-    border: 5px solid #1A535C;
+    border: 3px solid #1A535C;
    
 }
 
@@ -254,8 +271,8 @@ body {
     display:flex;
     justify-content:space-evenly;
     align-items:center;
-    position:relative;
-
+    position: absolute;
+    bottom: 180px;
 }
 
 .page2.location {
@@ -263,7 +280,7 @@ body {
     position: relative;
     justify-content: center;
     align-items: flex-start;
-        flex-basis:100px;
+     
 }
 
 .page2.header {
@@ -280,8 +297,10 @@ body {
     position: relative;
     color:#f7fff7;
     font-family: 'Roboto condensed';
-    font-size:30px;
-    
+    font-size:23px;
+    margin-bottom: 0;
+    margin-top: 5px;
+    font-weight: 300;
 }
 
 .page2_mainblock {
@@ -298,6 +317,9 @@ body {
     justify-content: center;
     align-items: flex-end;
     flex-direction: column;
+    font-weight: 300;
+    line-height: 0.9;
+    margin-left: 40px;
 }
 
 .line {
@@ -306,7 +328,8 @@ body {
     justify-content: space-evenly;
     align-items:flex-end; 
     flex-basis:350px;
-    
+        margin-bottom: 80px;
+        height: 50px;
 }
 
 .mainblock_text {
@@ -314,7 +337,7 @@ body {
     color:#f7fff7;
     font-family: 'Roboto';
     font-size:45px;
-    
+        font-size: 40px;
 }
 
 /* page 3 */
@@ -435,4 +458,60 @@ body {
     justify-content: space-evenly;
     align-items: flex-start; 
     position: relative;
+}
+
+
+
+
+
+
+
+.cbutton {
+    position: relative;
+    display: inline-block;
+    margin: 1em;
+    padding: 0;
+    border: none;
+    background: none;
+    color: #286aab;
+    font-size: 1.4em;
+    transition: color 0.7s;
+}
+
+.cbutton.cbutton--click,
+.cbutton:focus {
+    outline: none;
+    color: #3c8ddc;
+}
+
+.cbutton__icon {
+    display: block;
+}
+
+.cbutton__text {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.cbutton::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -35px 0 0 -35px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.titleCorner{
+        color: #f7fff7;
+    position: absolute;
+    font-size: 35px;
+    font-family: 'Roboto';
+    top: -10%;
+    right: 10%;
 }

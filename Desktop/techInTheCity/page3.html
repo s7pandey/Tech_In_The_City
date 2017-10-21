@@ -11,48 +11,47 @@
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      
+         <script src="classie.js"></script>
     
     </head>
 
     <body id = "main">
 
         <div class="page2 header"> 
-            <h1 id="title"> Filler Title</h1>
+            <h1 class="titleCorner"> Filler Title</h1>
         </div>
         <div class = "page2_mainblock">
-            <div class="line">
+                       <div class="line">
                 <div class="travel_distance">
-                    <div class="mainblock_text"><p>time we </p> </div>
-                    <div class="mainblock_text"> have</div>
+                    <div class="mainblock_text"><p>time we</p> </div>
+                    <div class="mainblock_text">have</div>
                 </div>
-                <div class="test">
-                    <div class="Test2">
-                    <div class="minutes_number">0</div>
-                    </div>
-                    <div class="mainblock_text_minutes"><p> minutes</p> </div>
-                </div>
+                <div class="mainblock_text" style="width: 70px;
+    height: 50px;
+    border-bottom: 2px white solid;
+    text-align: center;
+    font-size: 41px;" id="time"> 0</div>
             </div>
             <div class = "circles_page2">
-                    <div class = "circle_walk">
+                    <div class = "circle_walk" onclick="add()">
                         <div class= "page2 circlebase outer-circle" >     
                             <div class = "page2 circlebase inner-circle" >   
-                                <div class="time ">+15</div> 
+                                <div class="time ">+30</div> 
                                 <div class="minutes">minutes</div>       
                             </div>
                         </div>
                     </div>
                     <div class = "circle_bike">
-                        <div class= "page2 circ2 circlebase outer-circle" >     
+                        <div class= "page2 circ2 circlebase outer-circle" onclick="update_url('file:///C:/Users/Daniel%20Kim/Desktop/tech/Tech_In_The_City/pull/Desktop/techInTheCity/page2.html')">     
                             <div class = "page2 circ2 circlebase inner-circle" >   
                                 <div class="navigate material-icons">navigate_next</div> 
                             </div>
                         </div>
                     </div>
                     <div class = "circle_car">
-                        <div class= "page2 circ3 circlebase outer-circle" >     
+                        <div class= "page2 circ3 circlebase outer-circle" onclick="sub()">     
                             <div class = "page2 circ3 circlebase inner-circle" >   
-                                <div class="time">-15</div> 
+                                <div class="time">-30</div> 
                                 <div class="minutes">minutes</div>       
                             </div>
                         </div>
@@ -61,12 +60,12 @@
         </div>
         <div class="page2 menu-options">
         
-            <div class = "menu-circle circlebase">
-                <div class="m1 material-icons"> person_add</div>     
+                 <div class = "menu-circle circlebase">
+                <div class="m1 material-icons" style="color:#4ECDC4;"> person_add</div>     
             </div>
 
-            <div class = "menu-circle circlebase">
-                <div class="m1 material-icons"> access_time</div>
+            <div class = "menu-circle circlebase" style="background-color:#4ECDC4">
+                <div class="m1 material-icons" style="color:#FFFFFF;"> access_time</div>
             </div>
 
             <div class = "menu-circle circlebase">
@@ -82,7 +81,7 @@
             </div>
         </div>
 
-        <div class="page2 location">
+        <div class="location">
             
             <div class = "location1 material-icons"> location_on</div>
             <div class = "complete_address">
